@@ -43,8 +43,7 @@ Lean how to use the ReVanced CLI.
   ```bash
   java -jar revanced-cli.jar \
    -a input.apk \
-   -c \
-   -o unpatched-output.apk \
+   -o patched-output.apk \
    -b revanced-patches.jar
   ```
 
@@ -54,7 +53,6 @@ Lean how to use the ReVanced CLI.
   adb install input.apk # make sure the same version is installed
   java -jar revanced-cli.jar \
       -a input.apk \
-      -c \
       -d device-name \
       -o patched-output.apk \
       -b revanced-patches.jar \
@@ -64,12 +62,13 @@ Lean how to use the ReVanced CLI.
 
 > **Note**:
 >
-> - If you want to exclude patches, you can use the option `-e`. In the case of YouTube, you have to exclude
-    the `microg-support` patch from  [ReVanced Patches](https://github.com/revanced/revanced-patches) with the
-    option `-e microg-support`.
+> - If you want to exclude patches, you can use the option `-e`. In the case of YouTube, you can exclude
+    the `microg-support` patch from [ReVanced Patches](https://github.com/revanced/revanced-patches) with the
+    option `-e microg-support` when mounting for example.
 >
 > - Some patches from [ReVanced Patches](https://github.com/revanced/revanced-patches) also might require
     [ReVanced Integrations](https://github.com/revanced/revanced-integrations). Supply them with the option `-m`.
+    > The integrations will be merged, if necessary automatically, if supplied.
 >
 > - If you supplied a device with the option `-d`, the patched application will be automatically installed on the
     device.
