@@ -119,3 +119,4 @@ node_modules/
 # ReVanced CLI
 revanced-cache/
 options.toml
+/workspace/

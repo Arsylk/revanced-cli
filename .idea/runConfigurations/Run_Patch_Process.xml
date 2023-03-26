@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Patch Process" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="app.revanced.cli.main.MainKt" />
+    <module name="revanced-cli.main" />
+    <option name="PROGRAM_PARAMETERS" value="-a workspace/unpatched-free-now-11.69.0.apk -o workspace/patched-free-now-11.69.0.apk -t workspace/revanced-cache -b ..\revanced-patches\build\libs\revanced-patches-2.156.0.jar -i freenow-root-bypass" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="revanced-cli [publish]" run_configuration_type="GradleRunConfiguration" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="revanced-patches [build]" run_configuration_type="GradleRunConfiguration" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
