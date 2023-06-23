@@ -1,3 +1,71 @@
+## [2.21.4](https://github.com/revanced/revanced-cli/compare/v2.21.3...v2.21.4) (2023-06-21)
+
+
+### Bug Fixes
+
+* remove duplicate options entries. ([d0fc886](https://github.com/revanced/revanced-cli/commit/d0fc8864286adc2677f91a319a11a90272c1001d))
+
+## [2.21.4-dev.1](https://github.com/revanced/revanced-cli/compare/v2.21.3...v2.21.4-dev.1) (2023-06-18)
+
+
+### Bug Fixes
+
+* remove duplicate options entries. ([d0fc886](https://github.com/revanced/revanced-cli/commit/d0fc8864286adc2677f91a319a11a90272c1001d))
+
+## [2.21.3](https://github.com/revanced/revanced-cli/compare/v2.21.2...v2.21.3) (2023-06-12)
+
+## [2.21.3-dev.1](https://github.com/revanced/revanced-cli/compare/v2.21.2...v2.21.3-dev.1) (2023-06-07)
+
+## [2.21.2](https://github.com/revanced/revanced-cli/compare/v2.21.1...v2.21.2) (2023-05-24)
+
+## [2.21.2-dev.2](https://github.com/revanced/revanced-cli/compare/v2.21.2-dev.1...v2.21.2-dev.2) (2023-05-15)
+
+## [2.21.2-dev.1](https://github.com/revanced/revanced-cli/compare/v2.21.1...v2.21.2-dev.1) (2023-05-07)
+
+## [2.21.1](https://github.com/revanced/revanced-cli/compare/v2.21.0...v2.21.1) (2023-05-06)
+
+## [2.21.1-dev.1](https://github.com/revanced/revanced-cli/compare/v2.21.0...v2.21.1-dev.1) (2023-05-06)
+
+# [2.21.0](https://github.com/revanced/revanced-cli/compare/v2.20.2...v2.21.0) (2023-05-04)
+
+
+### Bug Fixes
+
+* **tests:** set order of tests ([2ef48af](https://github.com/revanced/revanced-cli/commit/2ef48af1b339ab729a05d69cb0c8c1ee1e3ab486))
+* use working JADB dependency version ([#222](https://github.com/revanced/revanced-cli/issues/222)) ([da2c918](https://github.com/revanced/revanced-cli/commit/da2c91874d5623402febfcc0677ada3d648565e1))
+
+
+### Features
+
+* add appreciation message for new contributors ([6962fc2](https://github.com/revanced/revanced-cli/commit/6962fc2f4c0f0c96e88a823be64f8ebd1312ee17))
+
+# [2.21.0-dev.1](https://github.com/revanced/revanced-cli/compare/v2.20.2...v2.21.0-dev.1) (2023-05-04)
+
+
+### Bug Fixes
+
+* **tests:** set order of tests ([2ef48af](https://github.com/revanced/revanced-cli/commit/2ef48af1b339ab729a05d69cb0c8c1ee1e3ab486))
+* use working JADB dependency version ([#222](https://github.com/revanced/revanced-cli/issues/222)) ([da2c918](https://github.com/revanced/revanced-cli/commit/da2c91874d5623402febfcc0677ada3d648565e1))
+
+
+### Features
+
+* add appreciation message for new contributors ([6962fc2](https://github.com/revanced/revanced-cli/commit/6962fc2f4c0f0c96e88a823be64f8ebd1312ee17))
+
+## [2.20.2](https://github.com/revanced/revanced-cli/compare/v2.20.1...v2.20.2) (2023-04-30)
+
+
+### Bug Fixes
+
+* correct spelling mistake ([31fb316](https://github.com/revanced/revanced-cli/commit/31fb3166d922ae1f568f52e44cbe726dd1c891a4))
+
+## [2.20.2-dev.1](https://github.com/revanced/revanced-cli/compare/v2.20.1...v2.20.2-dev.1) (2023-04-03)
+
+
+### Bug Fixes
+
+* correct spelling mistake ([31fb316](https://github.com/revanced/revanced-cli/commit/31fb3166d922ae1f568f52e44cbe726dd1c891a4))
+
 ## [2.20.1](https://github.com/revanced/revanced-cli/compare/v2.20.0...v2.20.1) (2023-03-14)
 
 

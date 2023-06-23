@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.7.0"
+    kotlin("jvm") version "1.8.10"
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
@@ -23,17 +23,28 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("reflect"))
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.20-RC")
 
-    implementation("app.revanced:revanced-patcher:7.0.0")
-    implementation("info.picocli:picocli:4.7.0")
-    implementation("com.github.revanced:jadb:master-SNAPSHOT") // updated fork
-    implementation("com.android.tools.build:apksig:7.2.2")
+    implementation("app.revanced:revanced-patcher:11.0.0")
+    implementation("info.picocli:picocli:4.7.1")
+    implementation("com.github.revanced:jadb:2531a28109") // updated fork
+    implementation("com.android.tools.build:apksig:8.1.0-alpha09")
     implementation("org.bouncycastle:bcpkix-jdk15on:1.70")
-    implementation("cc.ekblad:4koma:1.1.0")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.+")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.20-RC")
+}
+
+kotlin {
+    jvmToolchain(11)
 }
 
 tasks {
+    test {
+        useJUnitPlatform()
+        testLogging {
+            events("PASSED", "SKIPPED", "FAILED")
+        }
+    }
     build {
         dependsOn(shadowJar)
     }

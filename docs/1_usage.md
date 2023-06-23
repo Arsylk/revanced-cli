@@ -1,6 +1,6 @@
-# 🛠️ Using the ReVanced CLI
+# 🛠️ Using ReVanced CLI
 
-Lean how to use the ReVanced CLI.
+Learn how to ReVanced CLI.
 
 ## ⚡ Setup (optional)
 
@@ -24,7 +24,7 @@ Lean how to use the ReVanced CLI.
 
 ## 🔨 ReVanced CLI Usage
 
-- ### Show all available options for the ReVanced CLI
+- ### Show all available options for ReVanced CLI
 
   ```bash
   java -jar revanced-cli.jar -h
@@ -38,7 +38,7 @@ Lean how to use the ReVanced CLI.
       -l
   ```
 
-- ### Use the ReVanced CLI without root permissions
+- ### Use ReVanced CLI without root permissions
 
   ```bash
   java -jar revanced-cli.jar \
@@ -56,15 +56,15 @@ Lean how to use the ReVanced CLI.
       -d device-name \
       -o patched-output.apk \
       -b revanced-patches.jar \
-      -e microg-support \
+      -e vanced-microg-support \
       --mount
   ```
 
 > **Note**:
 >
 > - If you want to exclude patches, you can use the option `-e`. In the case of YouTube, you can exclude
-    the `microg-support` patch from [ReVanced Patches](https://github.com/revanced/revanced-patches) with the
-    option `-e microg-support` when mounting for example.
+    the `vanced-microg-support` patch from [ReVanced Patches](https://github.com/revanced/revanced-patches) with the
+    option `-e vanced-microg-support` when mounting for example.
 >
 > - Some patches from [ReVanced Patches](https://github.com/revanced/revanced-patches) also might require
     [ReVanced Integrations](https://github.com/revanced/revanced-integrations). Supply them with the option `-m`.

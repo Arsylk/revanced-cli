@@ -3,6 +3,7 @@ package app.revanced.utils.patcher
 import app.revanced.cli.command.MainCommand
 import app.revanced.cli.command.MainCommand.args
 import app.revanced.cli.command.MainCommand.logger
+import app.revanced.cli.command.PatchList
 import app.revanced.patcher.Patcher
 import app.revanced.patcher.data.Context
 import app.revanced.patcher.extensions.PatchExtensions.compatiblePackages
@@ -10,7 +11,7 @@ import app.revanced.patcher.extensions.PatchExtensions.include
 import app.revanced.patcher.extensions.PatchExtensions.patchName
 import app.revanced.patcher.patch.Patch
 
-fun Patcher.addPatchesFiltered(allPatches: List<Class<out Patch<Context>>>) {
+fun Patcher.addPatchesFiltered(allPatches: PatchList) {
     val packageName = this.context.packageMetadata.packageName
     val packageVersion = this.context.packageMetadata.packageVersion
 
@@ -37,7 +38,7 @@ fun Patcher.addPatchesFiltered(allPatches: List<Class<out Patch<Context>>>) {
                 val compatibleWith = compatiblePackages.joinToString(";") { _package ->
                     "${_package.name}: ${_package.versions.joinToString(", ")}"
                 }
-                logger.warn("$prefix: Incompatible with version $packageVersion. This patch is only compatible with version $compatibleWith")
+                logger.warn("$prefix: Incompatible with version $packageVersion. This patch is only compatible with $compatibleWith")
                 return@patchLoop
             }
         }
